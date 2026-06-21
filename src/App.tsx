@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import LegalNotice from "./pages/LegalNotice";
 import TermsOfService from "./pages/TermsOfService";
 import DataPrivacy from "./pages/DataPrivacy";
+import Newsletter from "./pages/Newsletter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/legal-notice" element={<LegalNotice />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/data-privacy" element={<DataPrivacy />} />
+          <Route path="/newsletter" element={<Newsletter />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
