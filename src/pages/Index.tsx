@@ -336,7 +336,7 @@ const Index = () => {
       }}>
         <div className="max-w-7xl mx-auto">
           {/* Photo + Bio row */}
-          <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <AnimatedSection>
               <div className="rounded-3xl overflow-hidden" style={{ border: "1px solid rgba(201,169,97,0.15)" }}>
                 <img
