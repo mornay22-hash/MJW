@@ -73,13 +73,13 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="btn-gold-mjw text-xs px-5 py-2.5"
             style={{ fontSize: "0.72rem", borderRadius: "2rem" }}
           >
             Request Access
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -115,12 +115,12 @@ const Navbar = () => {
                 </Link>
               )
             )}
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="btn-gold-mjw mt-3 justify-center text-xs"
             >
               Request Access
-            </a>
+            </Link>
           </div>
         </div>
       )}

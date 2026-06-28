@@ -183,9 +183,9 @@ const Index = () => {
           </div>
 
           <AnimatedSection className="text-center mt-12">
-            <a href="/contact" className="btn-secondary inline-flex items-center gap-2">
+            <Link to="/contact" className="btn-secondary inline-flex items-center gap-2">
               Request Access <ArrowRight size={14} />
-            </a>
+            </Link>
           </AnimatedSection>
         </div>
       </section>
