@@ -74,13 +74,11 @@ const Navbar = () => {
             );
           })}
           <a
-            href="https://mjw-property-manager-knu3.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="btn-gold-mjw text-xs px-5 py-2.5"
             style={{ fontSize: "0.72rem", borderRadius: "2rem" }}
           >
-            Enter Platform
+            Request Access
           </a>
         </div>
 
@@ -118,12 +116,10 @@ const Navbar = () => {
               )
             )}
             <a
-              href="https://mjw-property-manager-knu3.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               className="btn-gold-mjw mt-3 justify-center text-xs"
             >
-              Enter Platform
+              Request Access
             </a>
           </div>
         </div>

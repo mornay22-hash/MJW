@@ -14,9 +14,8 @@ const TRACKS = [
 ];
 
 const MARQUEE_ITEMS = [
-  "MJW Signal", "MJW Portfolio Signal", "MJW Meeting",
-  "Vaulta", "Ledgera", "Sitemarka",
-  "The Family Caregiver", "Independent Music", "Cape Town",
+  "Obstrata", "Ledgera", "Vaulta",
+  "The Family Caregiver", "Independent Music", "Cape Town", "Founder-Operated",
 ];
 
 const scrollTo = (id: string) => {
@@ -58,23 +57,19 @@ const Index = () => {
               style={{ fontSize: "clamp(3rem, 9vw, 8.5rem)", fontWeight: 900, letterSpacing: "-0.04em" }}>
               <span className="block text-white/90">One Operator.</span>
               <span className="gold-text">One Business.</span>
-              <span className="block text-white/90">Multiple Active Lanes.</span>
+              <span className="block text-white/90">Three Active Platforms.</span>
             </h1>
 
             <p className="text-white/40 max-w-xl mx-auto mb-14 leading-loose text-sm md:text-base tracking-wide">
-              MJW GROUP — software platforms, intelligence dashboards, mobile applications,
-              published books, and independent music. Built from Cape Town, South Africa.
+              MJW GROUP builds software platforms, intelligence dashboards, mobile applications,
+              published work, and independent music from Cape Town, South Africa. The core platform
+              ecosystem is built around three operational products: Obstrata, Ledgera, and Vaulta.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://mjw-property-manager-knu3.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-gold-mjw"
-              >
+              <button onClick={() => scrollTo("ecosystem")} className="btn-gold-mjw">
                 Explore Platform Suite <ArrowRight size={14} />
-              </a>
+              </button>
               <button onClick={() => scrollTo("founder")} className="btn-secondary">
                 Meet the Founder
               </button>
@@ -82,11 +77,11 @@ const Index = () => {
 
             <div className="mt-28 grid grid-cols-3 gap-8 max-w-sm mx-auto">
               <div className="text-center">
-                <div className="gold-text font-serif font-black" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", letterSpacing: "-0.04em" }}>6</div>
+                <div className="gold-text font-serif font-black" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", letterSpacing: "-0.04em" }}>3</div>
                 <div className="text-[8.5px] text-white/25 tracking-[0.35em] uppercase mt-2">Platforms</div>
               </div>
               <div className="text-center" style={{ borderLeft: "1px solid rgba(255,255,255,0.08)", borderRight: "1px solid rgba(255,255,255,0.08)" }}>
-                <div className="gold-text font-serif font-black" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", letterSpacing: "-0.04em" }}>2</div>
+                <div className="gold-text font-serif font-black" style={{ fontSize: "clamp(2rem,5vw,3.5rem)", letterSpacing: "-0.04em" }}>1+</div>
                 <div className="text-[8.5px] text-white/25 tracking-[0.35em] uppercase mt-2">Published Works</div>
               </div>
               <div className="text-center">
@@ -120,69 +115,76 @@ const Index = () => {
       }}>
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-20">
-            <p className="text-[9.5px] text-[#C9A961] tracking-[0.38em] uppercase font-semibold mb-5">— Intelligence Dashboards</p>
+            <p className="text-[9.5px] text-[#C9A961] tracking-[0.38em] uppercase font-semibold mb-5">— Platform Ecosystem</p>
             <div className="section-divider-gold mx-auto mb-8" />
             <h2 className="font-serif font-black mt-5 mb-6 leading-none" style={{ fontSize: "clamp(2.2rem,5vw,4rem)" }}>
-              Three Dashboards.<br /><span className="gold-text">One Operating Mind.</span>
+              Three Platforms.<br /><span className="gold-text">One Operating System.</span>
             </h2>
             <p className="text-white/35 max-w-xl mx-auto text-sm leading-relaxed">
-              Private intelligence environments for personal productivity, property portfolio oversight, and structured meeting management.
+              A focused ecosystem of founder-operated platforms built from real operational pressure: property operations, financial administration, and family health coordination.
             </p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
-                icon: (<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>),
-                name: "MJW Signal",
-                desc: "Personal Intelligence Dashboard — task management, financial tracking, habits, goals, people management, and personal productivity intelligence in one structured command environment.",
-                solves: "Replaces fragmented productivity tools with one command environment.",
+                logo: "/Obstrata_PWA_Web_Transparent_512x512.png",
+                label: "Property Operations Platform",
+                name: "Obstrata",
+                tagline: "Property Manager Platform",
+                desc: "Property management and portfolio operations platform for asset oversight, tenant management, arrears visibility, lease risk, site reporting, compliance tracking, action items, and operational accountability.",
+                solves: "Converts fragmented property operations into one structured operational command environment.",
+                url: "https://www.obstrata.co.za",
               },
               {
-                icon: (<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>),
-                name: "MJW Portfolio Signal",
-                desc: "Property Portfolio Intelligence — asset performance, tenant management, arrears tracking, lease risk, compliance oversight, and operational visibility across the full portfolio.",
-                solves: "Consolidates property portfolio data into one operational dashboard.",
+                logo: "/Ledgera_PWA_Web_Transparent_512x512.png",
+                label: "Financial Operations Platform",
+                name: "Ledgera",
+                tagline: "Financial Operations for South African Businesses",
+                desc: "Financial operations platform for South African owner-managed businesses, supporting VAT calculations, tax structuring, expense tracking, financial administration, and audit-ready reporting.",
+                solves: "Replaces spreadsheet-heavy financial admin with structured, traceable operational reporting.",
+                url: "https://www.ledgera.co.za",
               },
               {
-                icon: (<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>),
-                name: "MJW Meeting",
-                desc: "Structured Meeting Management — agendas, minutes capture, decisions, action tracking, accountability assignment, and full meeting history. Meetings become documented, accountable outcomes.",
-                solves: "Turns meetings into documented, action-driven accountability systems.",
+                logo: "/Vaulta_PWA_Web_Transparent_512x512.png",
+                label: "Family Health Platform",
+                name: "Vaulta",
+                tagline: "Family Health Coordination",
+                desc: "Secure platform for managing family medical records, emergency contacts, care plans, health documents, medication information, and real family health administration.",
+                solves: "Keeps critical family health information structured, accessible, and ready when needed.",
+                url: "https://www.vaulta.co.za",
               },
             ].map((p, i) => (
               <AnimatedSection key={p.name} delay={i * 0.1}>
-                <div className="gold-card p-8 rounded-2xl h-full flex flex-col">
-                  <div className="flex items-center justify-between mb-8">
-                    <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: "linear-gradient(135deg,rgba(201,169,97,0.12),rgba(201,169,97,0.02))", border: "1px solid rgba(201,169,97,0.18)", color: "#C9A961" }}>
-                      {p.icon}
+                <a href={p.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                  <div className="gold-card p-8 rounded-2xl h-full flex flex-col" style={{ transition: "transform 0.2s" }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}>
+                    <div className="flex items-center justify-between mb-8">
+                      <img src={p.logo} alt={p.name} className="w-14 h-14 rounded-xl object-contain"
+                        style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(201,169,97,0.18)", padding: "6px" }} />
+                      <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full"
+                        style={{ background: "rgba(16,185,129,0.08)", border: "1px solid rgba(16,185,129,0.25)" }}>
+                        <span className="status-dot-active" />
+                        <span className="text-[8.5px] text-[#10B981] tracking-[0.22em] uppercase font-semibold">Active</span>
+                      </span>
                     </div>
-                    <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full"
-                      style={{ background: "rgba(16,185,129,0.08)", border: "1px solid rgba(16,185,129,0.25)" }}>
-                      <span className="status-dot-active" />
-                      <span className="text-[8.5px] text-[#10B981] tracking-[0.22em] uppercase font-semibold">Active</span>
-                    </span>
+                    <p className="text-[9px] text-[#C9A961] tracking-[0.35em] uppercase font-semibold mb-1">{p.label}</p>
+                    <h3 className="font-serif font-bold text-xl mb-1">{p.name}</h3>
+                    <p className="text-white/40 text-xs mb-3">{p.tagline}</p>
+                    <p className="text-white/35 text-sm leading-relaxed mb-5 flex-1">{p.desc}</p>
+                    <div className="text-xs text-white/25 leading-relaxed pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+                      <span className="text-[#C9A961] font-semibold">Solves: </span>{p.solves}
+                    </div>
                   </div>
-                  <p className="text-[9px] text-[#C9A961] tracking-[0.35em] uppercase font-semibold mb-3">Intelligence Dashboard</p>
-                  <h3 className="font-serif font-bold text-xl mb-3">{p.name}</h3>
-                  <p className="text-white/35 text-sm leading-relaxed mb-5 flex-1">{p.desc}</p>
-                  <div className="text-xs text-white/25 leading-relaxed pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                    <span className="text-[#C9A961] font-semibold">Solves: </span>{p.solves}
-                  </div>
-                </div>
+                </a>
               </AnimatedSection>
             ))}
           </div>
 
           <AnimatedSection className="text-center mt-12">
-            <a
-              href="https://mjw-property-manager-knu3.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2"
-            >
-              Access the dashboards <ArrowRight size={14} />
+            <a href="/contact" className="btn-secondary inline-flex items-center gap-2">
+              Request Access <ArrowRight size={14} />
             </a>
           </AnimatedSection>
         </div>
@@ -206,21 +208,25 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { logo: "/Vaulta.png", name: "Vaulta", sub: "Family Health Coordination", desc: "Secure platform for managing family medical records, emergency contacts, care plans, and health documentation — built for real family health administration." },
-              { logo: "/Ledgera.jpg", name: "Ledgera", sub: "Financial Operations", desc: "Financial operations platform for South African owner-managed businesses. VAT calculations, tax structuring, expense tracking, and audit-ready reporting." },
-              { logo: "/Sitemarka.jpg", name: "Sitemarka", sub: "Property Field Inspection", desc: "Site-level inspection and reporting system for property operations. Tracks real-world execution, compliance logs, and field-level operational data." },
+              { logo: "/Obstrata_PWA_Web_Transparent_512x512.png", name: "Obstrata", sub: "Property Field Operations", url: "https://www.obstrata.co.za", desc: "Site reporting, tenant issues, compliance logs, action tracking, and operational follow-up. Built for daily property field operations." },
+              { logo: "/Ledgera_PWA_Web_Transparent_512x512.png", name: "Ledgera", sub: "Financial Operations", url: "https://www.ledgera.co.za", desc: "VAT, expenses, tax structuring, financial records, and audit-ready reporting for South African owner-managed businesses." },
+              { logo: "/Vaulta_PWA_Web_Transparent_512x512.png", name: "Vaulta", sub: "Family Health Coordination", url: "https://www.vaulta.co.za", desc: "Medical records, emergency contacts, care plans, and health documentation — structured, secure, and ready when needed." },
             ].map((a, i) => (
               <AnimatedSection key={a.name} delay={i * 0.1}>
-                <div className="gold-card p-8 rounded-2xl h-full flex flex-col">
-                  <div className="w-20 h-20 rounded-2xl mb-8 overflow-hidden flex items-center justify-center"
-                    style={{ border: "1px solid rgba(201,169,97,0.2)", background: "#0f0f12" }}>
-                    <img src={a.logo} alt={a.name} className="w-full h-full object-cover" />
+                <a href={a.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                  <div className="gold-card p-8 rounded-2xl h-full flex flex-col" style={{ transition: "transform 0.2s" }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}>
+                    <div className="w-20 h-20 rounded-2xl mb-8 overflow-hidden flex items-center justify-center"
+                      style={{ border: "1px solid rgba(201,169,97,0.2)", background: "#0f0f12", padding: "8px" }}>
+                      <img src={a.logo} alt={a.name} className="w-full h-full object-contain" />
+                    </div>
+                    <p className="text-[9px] text-[#C9A961] tracking-[0.35em] uppercase font-semibold mb-3">Mobile App</p>
+                    <h3 className="font-serif font-bold mb-2" style={{ fontSize: "1.75rem" }}>{a.name}</h3>
+                    <p className="text-white/55 text-sm font-medium mb-4">{a.sub}</p>
+                    <p className="text-white/35 text-sm leading-relaxed flex-1">{a.desc}</p>
                   </div>
-                  <p className="text-[9px] text-[#C9A961] tracking-[0.35em] uppercase font-semibold mb-3">Mobile App</p>
-                  <h3 className="font-serif font-bold mb-2" style={{ fontSize: "1.75rem" }}>{a.name}</h3>
-                  <p className="text-white/55 text-sm font-medium mb-4">{a.sub}</p>
-                  <p className="text-white/35 text-sm leading-relaxed flex-1">{a.desc}</p>
-                </div>
+                </a>
               </AnimatedSection>
             ))}
           </div>
@@ -364,10 +370,14 @@ const Index = () => {
                 coordination — and repeatedly hitting the same problem: the available tools were either
                 too generic, too complex, or simply did not exist.
               </p>
+              <p className="text-white/42 leading-relaxed mb-5 text-sm">
+                With a professional background in commercial property management and direct experience
+                across tenant operations, financial reporting, maintenance workflows, compliance, and
+                family administration, each MJW platform is built from practical operational friction.
+              </p>
               <p className="text-white/42 leading-relaxed mb-10 text-sm">
-                With a professional background in commercial property management, the direct experience
-                of managing operational complexity across tenants, financial reporting, maintenance
-                workflows, and compliance requirements shaped every platform in the MJW ecosystem.
+                The ecosystem now focuses on three core platforms: Obstrata for property operations,
+                Ledgera for financial operations, and Vaulta for family health administration.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
