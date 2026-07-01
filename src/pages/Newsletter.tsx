@@ -5,10 +5,98 @@ import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 
 const EDITIONS = [
   {
+    num: "006",
+    date: "July 2026",
+    title: "I Built a Custom Property Operations Dashboard Because Spreadsheets Were No Longer Enough",
+    tags: ["Platform", "Obstrata"],
+    preview: "Property management is not a filing problem — it is a visibility problem. Here is why I built Obstrata as a command centre for property operations, and what it changed.",
+    full: `Property management is often described as tenant queries, maintenance follow-ups, site visits, lease renewals, arrears, and monthly reporting.
+
+That description is accurate, but it is incomplete.
+
+In reality, property management is a layered operating environment. A property manager is expected to know what is happening across buildings, tenants, facilities, compliance, arrears, leasing, contractors, documents, inspections, budgets, reporting deadlines, and risk items — often before an issue has been formally escalated.
+
+The challenge is not usually a lack of effort. The challenge is fragmentation.
+
+One issue sits in an email thread. Another sits in a spreadsheet. A maintenance item is buried in WhatsApp. A lease expiry is hidden in a schedule. A tenant concern is raised during a site visit but never converted into an action. A compliance matter is known, but not properly tracked to closure.
+
+Over time, the information exists — but it does not exist in one operational view.
+
+That is why I started building Obstrata. Not as another admin system. As a command centre for property operations.
+
+**From Information Storage to Risk Visibility**
+
+The first mistake I made was trying to organise property information the same way it already existed. Buildings in one place. Tenants in another. Arrears somewhere else. Compliance registers in separate folders.
+
+That structure works when the goal is to store information. It does not work when the goal is to make decisions.
+
+A property manager does not start the day by asking: "Which spreadsheet should I open?" The real questions are more direct: What needs attention today? Which tenant issue could escalate? Which arrears item requires action? Which compliance matter is overdue?
+
+That shift changed the way I thought about the dashboard. I stopped designing around files. I started designing around operational pressure.
+
+The home screen of Obstrata is not a filing cabinet. It is an exception view — showing what needs attention, what is overdue, what carries commercial exposure, and who owns the next action.
+
+**One Operational View for Work That Normally Sits Across Ten Places**
+
+The dashboard is built around the way a property manager actually works. It includes sections for buildings, tenants, arrears, leasing, vacancies, compliance, facilities, action items, site reports, security reports, documents, data loads, and management pack preparation.
+
+Each section has value on its own. The real value comes from connecting them.
+
+A tenant is not just a name on a lease schedule. A tenant may have arrears, open maintenance items, lease exposure, turnover concerns, compliance matters, documents, and site-specific notes. A building is not just a property. It is a live operating environment with income, risk, contractors, inspections, vacancies, municipal matters, and reporting deadlines.
+
+Once those items are visible in one place, the portfolio becomes easier to control. Not because the work disappears. Because the work becomes visible.
+
+**Built for Action, Not Decoration**
+
+I did not want a dashboard full of attractive graphs that look impressive but do not help with actual decisions. For property operations, a dashboard must answer practical questions quickly.
+
+Is this item overdue? Who owns it? What is the next action? What is the Rand exposure? Does this need escalation?
+
+The dashboard uses clear status indicators, risk levels, due dates, ownership fields, notes, source references, and evidence links. The purpose is not to create more reporting. The purpose is to reduce the chance that something important gets missed.
+
+**Site Visits Became Operational Control Tools**
+
+Site visits are one of the most important parts of property management. They are also one of the easiest areas to under-document.
+
+A walkthrough may identify lighting failures, signage issues, refuse concerns, landscaping problems, tenant shopfront matters, bathroom conditions, parking issues, or security risks. If those observations are not converted into structured actions, they depend too heavily on memory and follow-up.
+
+The site visit section of Obstrata was designed to capture issues by building, category, severity, status, photo evidence, due date, and responsible party. That changes the function of a site visit. It becomes more than proof that someone was on site. It becomes an operational control tool.
+
+**The Management Pack Should Not Be a Monthly Scramble**
+
+The information needed for a management pack usually exists. The problem is that it is scattered. Minutes, fast facts, problem tenants, arrears, leasing updates, site reports, planned maintenance, compliance updates, vacancies, and open action items often sit in different formats and locations.
+
+Obstrata is being shaped to reduce that friction. The idea is to allow information to build up during the month, so reporting becomes a controlled process rather than a last-minute chase.
+
+That is where the dashboard becomes more than a personal productivity tool. It becomes a governance layer.
+
+**The Most Useful Feature Is Knowing What Not to Chase**
+
+In a busy property environment, everything can feel urgent. But not everything carries the same weight. A tenant complaint, a compliance gap, a lease expiry, an arrears matter, a contractor delay — these cannot all be treated as equal.
+
+The dashboard helps separate noise from signal.
+
+Some items need immediate action. Some need monitoring. Some need escalation. Some only need to be recorded. Some can safely wait.
+
+Property management is not just about doing more. It is about directing attention to the areas where delay creates commercial, compliance, operational, or reputational exposure.
+
+**The Direction Is Clear**
+
+Obstrata is still evolving. There are more modules to refine, more imports to improve, more reporting layers to automate, and more operational logic to build into the system.
+
+But the direction is clear.
+
+The future of property management is not more spreadsheets, more inbox pressure, or more manual chasing. It is structured visibility. It is risk-led prioritisation. It is evidence-based follow-up. It is knowing what matters today, what is becoming a problem, and what can safely be ignored.
+
+A dashboard that does not just store property information. A dashboard that helps run the portfolio.
+
+No noise. Just operational signal.`,
+  },
+  {
     num: "005",
     date: "June 2026",
     title: "Platform Suite Update — MJW Signal V2 Launch",
-    tags: ["Platform", "MJW Signal"],
+    tags: ["Platform", "Obstrata"],
     preview: "The second major release of MJW Signal is live. Key additions: structured goal tracking, a redesigned weekly review module, and an integrated contact intelligence layer.",
     full: `MJW Signal V2 is the most significant update since the platform launched. Here's what changed and why.
 
